@@ -1,0 +1,39 @@
+@import '../../Styles/Base/_variables';
+
+.MainWindow {
+    background: black;
+    font-family: $SourceSansPro;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 1.5);
+    
+    &-Title {
+        position: relative;
+        z-index: 2;
+        font-size: $font-large;
+        margin-bottom: 24px;
+    }
+
+    &-InputContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    #MainWindowVideo {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}
